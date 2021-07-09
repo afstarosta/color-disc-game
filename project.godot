@@ -1,0 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="color_disc"
+run/main_scene="res://Main.tscn"
+config/icon="res://v1/Assets/icon.png"
+
+[autoload]
+
+GameCoordinator="*res://GameCoordinator.gd"
+
+[display]
+
+window/size/width=320
+window/size/height=320
+window/size/fullscreen=true
+window/size/test_width=320
+window/size/test_height=320
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
+
+[physics]
+
+common/enable_pause_aware_picking=true
